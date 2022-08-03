@@ -3,6 +3,7 @@
 ### setup
 
 - make a env file
+
 ```
 touch .env
 vim .env
@@ -16,4 +17,16 @@ MYSQL_ROOT_PASSWORD="<root password>"
 
 ```
 docker-compose up (-d: run in the background)
+```
+
+- enter a container
+
+```
+docker-compose exec mysql bash
+```
+
+- enter mysql
+
+```
+mysql -u root -p
 ```
